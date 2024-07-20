@@ -1,0 +1,33 @@
+## Tulip
+tulip_create = false
+tulip_vcpus = 4
+tulip_storage = 200
+tulip_memory = 12
+
+## Plato
+plato_create = true
+plato_server_type = "cax11"
+
+## Credentials
+
+# Hetzner Cloud
+hetzner_hcloud_token = ""
+
+# Oracle Cloud Infrastructure (OCI)
+oci_tenancy_ocid = ""
+oci_user_ocid = ""
+oci_fingerprint = ""
+oci_private_key_path = ""
+oci_region = ""
+oci_compartment_id = ""
+oci_instance_availability_domain = ""
+
+# Cloudflare
+cloudflare_api_token = ""
+cloudflare_zone_id = ""
+
+# Tailscale
+tailscale_auth_key = ""
+
+# K3s (tulip)
+k3s_bootstrap_key = ""
