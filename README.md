@@ -79,4 +79,4 @@ tofu apply --var-file=creds.tfvars
 * Tailscale ACL
 
 # License
-This project is licensed under AGPLv3.0. See [LICENSE](LICENSE) for more details.
+This project is licensed under AGPLv3.0. See [LICENSE.md](LICENSE.md) for more details.
