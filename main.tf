@@ -92,7 +92,7 @@ resource "hcloud_server" "plato" {
             "bash /tmp/kreato-install.sh",
             "tailscale up --auth-key=${var.tailscale_auth_key} --advertise-tags=tag:k8s-nodes",
             "wget https://get.k3s.io -O /tmp/kreato-k3s-install.sh",
-            "K3S_URL=https://tulip:6443 K3S_TOKEN='${var.k3s_bootstrap_key}' bash /tmp/kreato-k3s-install.sh --vpn-auth='name=tailscale,joinKey=${var.tailscale_auth_key},extraArgs=--ssh'"
+            "K3S_URL=https://tulip:6443 K3S_TOKEN='${var.k3s_bootstrap_key}' bash /tmp/kreato-k3s-install.sh --vpn-auth='name=tailscale,joinKey=${var.tailscale_auth_key},extraArgs=--ssh --advertise-exit-node'"
         ]
     }
 }
