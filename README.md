@@ -30,12 +30,14 @@ The goal of this project is to create a simple, reproducible, and secure infrast
 * Tailscale
     * tulip
         * Tailscale SSH: Enabled
+        * Exit Node: no
         * Tag: tag:k8s-nodes
         * Subnet: 10.42.0.0/16
         * Only gets created if `tulip_create = true` in `creds.tfvars`
 
     * plato
         * Tailscale SSH: Enabled
+        * Exit Node: yes
         * Tag: tag:k8s-nodes
         * Subnet: 10.42.0.0/16
         * Only gets created if `plato_create = true` in `creds.tfvars`
