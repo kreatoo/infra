@@ -136,7 +136,7 @@ resource "oci_core_instance" "tulip" {
             "bash /tmp/kreato-install.sh",
             "tailscale up --auth-key=${var.tailscale_auth_key} --advertise-tags=tag:k8s-nodes",
             "wget https://get.k3s.io -O /tmp/kreato-k3s-install.sh",
-            "bash /tmp/kreato-k3s-install.sh --vpn-auth='name=tailscale,joinKey=${var.tailscale_auth_key},extraArgs=--ssh'"
+            "bash /tmp/kreato-k3s-install.sh --disable=servicelb --vpn-auth='name=tailscale,joinKey=${var.tailscale_auth_key},extraArgs=--ssh'"
         ]
     }
 
